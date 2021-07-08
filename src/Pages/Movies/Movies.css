@@ -1,0 +1,62 @@
+.moviesContainer {
+  max-width: 1300px;
+  margin: 1rem auto;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  color: #171717;
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+
+.latestMovies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1232px) {
+  .latestMovies {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (max-width: 950px) {
+  .latestMovies {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 630px) {
+  .latestMovies {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1200px) {
+  .app {
+    padding-top: 50px;
+  }
+}
+
+.backButton {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  width: 70px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.noMovieDiv {
+  margin-left: 20px;
+}
